@@ -1,0 +1,8 @@
+# BLAST ASVs against PR2_V7 database to get sequence identity with top hit
+
+# 1. Make PR2_V7 BLAST nucleotide database
+cd ~/Desktop/pr2/
+makeblastdb -in pr2_version_4.13.0_18S_v7_dada2.fasta -input_type fasta -dbtype nucl -out pr2_version_4.13.0_18S_v7_dada2
+
+# 2. BLAST ASVs against PR2_V7 db
+nohup blastn -query lp2017-2019watercolumn18s_protists_366lakes.fasta -task blastn -db pr2_version_4.13.0_18S_v7_dada2 -out lp2017-2019watercolumn18s_protists_366lakes_blast_pr2v7.tsv -outfmt "6 qseqid sseqid pident length mismatch gapopen qlen qstart qend slen sstart send evalue bitscore" -max_target_seqs 1 -num_threads 8 &

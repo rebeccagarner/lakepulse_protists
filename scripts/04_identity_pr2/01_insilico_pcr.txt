@@ -1,0 +1,7 @@
+# Perform in silico PCR with primer set on PR2 to extract 18S rRNA gene V7 region fragment
+cutadapt --discard-untrimmed -g FORWARD_PRIMER INPUT.fasta 2> /dev/null | cutadapt --discard-untrimmed -a REVERSE_PRIMER_REVERSE_COMPLEMENT - 2> /dev/null > OUTPUT.fasta
+
+# Forward primer (960F): GGCTTAATTTGACTCAACRCG
+# Reverse primer (NSR1438): GGGCATCACAGACCTGTTAT
+# Reverse complement of reverse primer: ATAACAGGTCTGTGATGCCC
+cutadapt --discard-untrimmed -g GGCTTAATTTGACTCAACRCG pr2_version_4.13.0_18S_dada2.fasta 2> /dev/null | cutadapt --discard-untrimmed -a ATAACAGGTCTGTGATGCCC - 2> /dev/null > pr2_version_4.13.0_18S_v7_dada2.fasta

@@ -1,0 +1,5 @@
+# Align ASVs to Silva reference database in SINA
+sina -i ASVS.fasta -r REFERENCE.arb -o OUTPUT.fasta --log-file LOGFILE.log
+
+conda activate sina
+sina -i lp2017-2019watercolumn18s_rmspurious.fasta -r SILVA_138.1_SSURef_NR99_12_06_20_opt.arb -o lp2017-2019watercolumn18s_rmspurious_sina.fasta --log-file lp2017-2019watercolumn18s_rmspurious_sina.log
