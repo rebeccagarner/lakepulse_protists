@@ -1,10 +1,10 @@
-# Protist diversity and metabolic strategy in freshwater lakes are shaped by trophic state and watershed land use at a continental scale <a><img src='images/lakepulse_protists_figure1_repo.png' align="right" height="300"/></a>
+# Protist Diversity and Metabolic Strategy in Freshwater Lakes Are Shaped by Trophic State and Watershed Land Use on a Continental Scale <a><img src='images/lakepulse_protists_figure1_repo.png' align="right" height="300"/></a>
 
 Scripts associated with the article
 
 ---
 
-Garner RE, Kraemer SA, Onana VE, Huot Y, Gregory-Eaves I, Walsh DA. 2022. Protist Diversity and Metabolic Strategy in Freshwater Lakes Are Shaped by Trophic State and Watershed Land Use on a Continental Scale. mSystems (*in press*).
+Garner RE, Kraemer SA, Onana VE, Huot Y, Gregory-Eaves I, Walsh DA. 2022. Protist Diversity and Metabolic Strategy in Freshwater Lakes Are Shaped by Trophic State and Watershed Land Use on a Continental Scale. mSystems e00316-22. https://doi.org/10.1128/msystems.00316-22.
 
 ---
 
@@ -32,7 +32,7 @@ Garner RE, Kraemer SA, Onana VE, Huot Y, Gregory-Eaves I, Walsh DA. 2022. Protis
 - **03_trophic_functions.R** Assign trophic functional diversity.
 - *04_identity_pr2/*
     - **01_insilico_pcr.txt** Perform in silico PCR with primer set on PR2 to extract 18S rRNA gene V7 region fragment.
-    - **02_primer_lengths.R** # Assess PR2 18S rRNA gene V7 region fragment lengths.
+    - **02_primer_lengths.R** Assess PR2 18S rRNA gene V7 region fragment lengths.
     - **03_blastn_asvs_pr2v7.txt** BLAST ASVs against PR2_V7 database to get sequence identity with top hit.
     - **04_percentidentity.R** Assess sequence identities between ASVs and PR2 references.
 - **05_metadata.R** Curate lake environmental metadata.
